@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: grey;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
 .main-nav-container {
     position: relative;
 }
@@ -23,11 +31,15 @@
 }
 
 .nav-expand {
-    transform: translateX(0vw);
+    transform: translate(-16vw, -40vh) rotate(-30deg);
 }
 
 .nav-items {
-    padding-top: 6rem;
+    height: 100%;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 50vh;
+    left: 0;
 }
 
 .item {
@@ -94,9 +106,9 @@
 
 .cover-img {
     width: 60vw;
-    height: 40vh;
+    height: 45vh;
     object-fit: cover;
-    margin: 0 2.5rem 2.5rem 0;
+    margin: 0 3rem 3rem 0;
 }
 
 .text {
