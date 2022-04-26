@@ -1,17 +1,39 @@
 /* global */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: grey;
+.body {
+    background-color: #EBAE93;
+}
+
+.body-expand {
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    font-family: 'Ubuntu',
+        sans-serif;
+    margin: 1rem;
+}
+
+p,
+li {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8rem;
+    margin: 1rem;
 }
 
 .main-nav-container {
@@ -21,7 +43,7 @@ h1 {
 /* nav */
 
 .nav {
-    background-color: grey;
+    background-color: #EBAE93;
     width: 120vw;
     height: 100vh;
     padding: 2rem;
@@ -40,24 +62,27 @@ h1 {
     position: absolute;
     top: 50vh;
     left: 0;
+    color: #441A01;
+    font-weight: bolder;
 }
 
 .item {
     cursor: pointer;
     list-style-type: none;
-    padding: 1rem;
+    padding: .85rem;
     font-size: 1.4rem;
     transition: .1s all ease-in-out;
 }
 
 .item:hover {
-    transform: translateX(.5%);
+    transform: translateX(5%);
+    border-bottom: 1px solid #441A01;
 }
 
 .logo-container {
-    background-color: aqua;
+    background-color: #EBAE93;
     height: 14rem;
-    padding: 3rem;
+    padding: 3.1rem;
     border-radius: 50%;
     width: 14rem;
     display: flex;
@@ -67,7 +92,12 @@ h1 {
     top: 0;
     left: 0;
     transition: .7s transform ease-in-out;
+    transition: .7s background-color ease-in-out;
     z-index: 5;
+}
+
+.logo-container-active {
+    background-color: #C4515C;
 }
 
 .logo-inactive {
@@ -79,15 +109,14 @@ h1 {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: white;
-    transition: .15s all ease-in-out;
     cursor: pointer;
     transform: rotate(-45deg);
 }
 
 .logo:hover {
-    color: black;
+    color: #441A01;
 }
 
 /* main */
@@ -108,7 +137,9 @@ h1 {
     width: 60vw;
     height: 45vh;
     object-fit: cover;
-    margin: 0 3rem 3rem 0;
+    margin: 1rem 3rem 3rem 0;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 .text {
@@ -121,4 +152,9 @@ h1 {
 
 .outliers-img {
     margin: 1rem;
+}
+
+.intro-text {
+    text-align: center;
+    font-style: italic;
 }
