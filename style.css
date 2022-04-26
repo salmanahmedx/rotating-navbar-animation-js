@@ -19,6 +19,7 @@
     padding: 2rem;
     position: relative;
     transform: translateX(-20vw);
+    transition: .5s transform ease-in-out;
 }
 
 .nav-expand {
