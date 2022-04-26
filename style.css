@@ -10,10 +10,15 @@
 
 .nav {
     background-color: grey;
-    width: 50vw;
-    height: 50vh;
+    width: 40vw;
+    height: 60vh;
     padding: 2rem;
+    position: relative;
     /* transform: rotate(60deg); */
+}
+
+ul {
+    padding-top: 6rem;
 }
 
 .item {
@@ -26,4 +31,39 @@
 
 .item:hover {
     transform: translateX(2%);
+}
+
+.logo-container {
+    background-color: aqua;
+    height: 12rem;
+    padding: 2.5rem;
+    border-radius: 50%;
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .7s transform ease-in-out;
+}
+
+.logo-inactive {
+    transform: translate(-40%, -40%) rotate(45deg);
+}
+
+.logo-active {
+    transform: translate(-40%, -40%) rotate(-135deg);
+}
+
+.logo {
+    font-size: 1.75rem;
+    color: white;
+    transition: .15s all ease-in-out;
+    cursor: pointer;
+    transform: rotate(-45deg);
+}
+
+.logo:hover {
+    color: black;
 }
