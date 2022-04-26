@@ -1,0 +1,29 @@
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav */
+
+.nav {
+    background-color: grey;
+    width: 50vw;
+    height: 50vh;
+    padding: 2rem;
+    /* transform: rotate(60deg); */
+}
+
+.item {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 1rem;
+    font-size: 1.4rem;
+    transition: .1s all ease-in-out;
+}
+
+.item:hover {
+    transform: translateX(2%);
+}
